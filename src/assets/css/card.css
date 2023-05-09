@@ -1,0 +1,23 @@
+.card {
+  position: relative;
+  border-radius: 10px;
+}
+
+.card img {
+  position: relative;
+  object-fit: none;
+  border-radius: 10px;
+  z-index: 10;
+  height: 340px;
+  width: 100%;
+}
+
+.card h2 {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  margin: 0;
+  font-size: 1.25rem;
+  color: white;
+  z-index: 12;
+}

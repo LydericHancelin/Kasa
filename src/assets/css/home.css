@@ -1,0 +1,20 @@
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 0 6.25rem;
+  gap: 2.7rem;
+}
+
+#apropos {
+  display: flex;
+  flex-direction: column;
+  padding: 0 6.25rem;
+  padding-bottom: 2rem;
+  gap: 2.7rem;
+  min-height: calc(100vh - 328.5px);
+  align-items: center;
+}
+
+#apropos .select {
+  width: 90%;
+}

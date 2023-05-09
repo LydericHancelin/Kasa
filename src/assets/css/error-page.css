@@ -1,0 +1,22 @@
+#error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ff6060;
+  min-height: calc(100vh - 148px - 148.5px);
+}
+
+#error-page h1 {
+  font-size: 18rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+#error-page p {
+  font-size: 2.25rem;
+}
+
+#error-page a {
+  color: #ff6060;
+}

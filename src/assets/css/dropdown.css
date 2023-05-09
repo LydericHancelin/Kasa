@@ -1,0 +1,59 @@
+.label {
+  background-color: #ff6060;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.select .arrow {
+  transform: rotate(0);
+  transition: transform 0.5s;
+}
+
+.select .arrow.open {
+  transform: rotate(180deg);
+}
+
+.select .content {
+  background-color: #f6f6f6;
+  color: #ff6060;
+  font-size: 1.5rem;
+  display: flex;
+  padding: 0;
+  border-radius: 10px;
+  height: 0;
+  overflow: hidden;
+}
+
+.select .list {
+  background-color: #f6f6f6;
+  color: #ff6060;
+  font-size: 1.5rem;
+  padding: 0;
+  border-radius: 10px;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  list-style: none;
+}
+
+.select .content.open {
+  height: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.select .list.open {
+  height: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.select .list.open li {
+  margin: 0.5rem 0;
+}

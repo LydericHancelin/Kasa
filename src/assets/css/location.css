@@ -1,0 +1,62 @@
+.location {
+  padding: 0 6.25rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+  color: #ff6060;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: calc(100vh - 148.5px - 148px);
+}
+
+.location h2 {
+  font-size: 2.25rem;
+  margin: 0;
+}
+
+.location .profil {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.location .details {
+  display: flex;
+  justify-content: space-between;
+}
+.location .location-desc p {
+  margin: 0;
+}
+
+.location .host {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.location .host p {
+  font-size: 1.25rem;
+  width: 5rem;
+  margin: 0;
+  text-align: right;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.location .rating-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.location .dropdowns {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+}
+
+.location .dropdowns > div {
+  width: 100%;
+  padding: 0;
+  height: 100%;
+}
