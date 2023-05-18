@@ -26,20 +26,25 @@ function Location() {
   return (
     <div className="location">
       {logements && <Carrousel pictures={logements.pictures} />}
-      <div className="details">
-        <div className="location-desc">
-          {logements && <h2>{logements.title}</h2>}
-          {logements && <p>{logements.location}</p>}
+      <div className="informations">
+        <div className="details">
+          <div className="location-desc">
+            {logements && <h2>{logements.title}</h2>}
+            {logements && <p>{logements.location}</p>}
+          </div>
+          {logements && <Tag tags={logements.tags} />}
         </div>
-        <div className="host">
-          {logements && <p>{logements.host.name}</p>}
-          {logements && <img className="profil" src={logements.host.picture} />}
+        <div className="rating-div">
+          <div className="host">
+            {logements && <p>{logements.host.name}</p>}
+            {logements && (
+              <img className="profil" src={logements.host.picture} />
+            )}
+          </div>
+          {logements && <Rating rating={logements.rating} />}
         </div>
       </div>
-      <div className="rating-div">
-        {logements && <Tag tags={logements.tags} />}
-        {logements && <Rating rating={logements.rating} />}
-      </div>
+
       <div className="dropdowns">
         {logements && (
           <Dropdown title="Description" text={logements.description} />

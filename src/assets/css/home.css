@@ -18,3 +18,22 @@
 #apropos .select {
   width: 90%;
 }
+
+@media screen and (max-width: 76.875rem) {
+  section {
+    padding: 1rem !important;
+  }
+  .banner {
+    height: 10rem !important;
+  }
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .galerie {
+    grid-template-columns: 1fr !important;
+    background-color: white !important;
+    padding: 0 !important;
+    gap: 1rem !important;
+  }
+}

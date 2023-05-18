@@ -7,11 +7,18 @@
   flex-direction: column;
   gap: 2rem;
   min-height: calc(100vh - 148.5px - 148px);
+  width: 100%;
 }
 
 .location h2 {
   font-size: 2.25rem;
   margin: 0;
+}
+
+.location .informations {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .location .profil {
@@ -22,6 +29,7 @@
 
 .location .details {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .location .location-desc p {
@@ -45,8 +53,9 @@
 
 .location .rating-div {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: end;
+  gap: 1rem;
 }
 
 .location .dropdowns {
@@ -59,4 +68,96 @@
   width: 100%;
   padding: 0;
   height: 100%;
+}
+
+@media screen and (max-width: 76.875rem) {
+  .location {
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  .banner h1 {
+    font-size: 1rem !important;
+  }
+
+  .carrousel {
+    height: 16rem !important;
+  }
+  .carrousel .previous {
+    left: 0.5rem !important;
+  }
+  .carrousel .next {
+    right: 0.5rem !important;
+  }
+  .carrousel .arrow-previous,
+  .carrousel .arrow-next {
+    width: 25%;
+    height: 25%;
+  }
+  .pictures-number {
+    left: 45% !important;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .details .location-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem !important;
+  }
+
+  .details h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .details .host p {
+    width: 100%;
+  }
+
+  .rating-div {
+    display: flex;
+    flex-direction: row-reverse !important;
+    align-items: center !important;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .rating-div .host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rating-div .host p {
+    font-size: 1rem;
+  }
+  .rating-div .host .profil {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .rating-div .rating {
+    gap: 0.5rem;
+  }
+  .rating-div .rating .rate img {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .dropdowns {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .location .informations {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  footer p {
+    margin: 1rem;
+    font-size: 1rem;
+  }
 }
